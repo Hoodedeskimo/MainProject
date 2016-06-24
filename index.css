@@ -1,0 +1,49 @@
+.squareTopLeft, .squareTopright,
+.squareBottomLeft, .squareBottomRight
+{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	transition: all 0.1s ease-in;
+}
+
+.squareTopLeft
+{
+ top:100px;
+ left:300px;
+ width:150px;
+ height:100px;
+ 
+ background: blue;
+}
+.squareTopright
+{ 
+	width:150px;
+    height:100px;
+	top:100px;
+	left:450px;
+	background: red;
+}
+
+
+.squareBottomLeft
+{ 
+	width:150px;
+    height:100px;
+	top:200px;
+	left:350px;
+	background: green;
+}
+.squareBottomRight
+{
+	width:150px;
+    height:100px;
+	background: yellow;
+	top:200px;
+	left:500px;
+}
+
+.squareTopLeft: 
+{
+	-moz-transform: translateX(-100px);
+}
