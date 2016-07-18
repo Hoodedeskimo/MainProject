@@ -1,49 +1,107 @@
-.squareTopLeft, .squareTopright,
+body {
+	background-color: #f7f7f7;
+	height: 100%;
+	width:100%;
+}
+
+#help{
+	height: 5%;
+	width: 5%;
+	position: absolute;
+	border-radius: 50px;
+	background-color: blue;
+	text-align: center;
+}
+
+#container{
+	position: absolute;
+	width:62.5%;
+	height:50%;
+	top:25%;
+	left:18.75%;	
+	border: 2px solid black;*/
+
+	}
+.logo{
+	text-align: center;
+}
+p {
+	position: absolute;
+	width:70%;
+	height:40%;
+	padding-top: 30%;
+	margin: -35% 0 0 -35%;
+	left: 50%;
+	top:50%;
+	/*border: 1px solid black;*/
+	text-align: center;
+
+	font: 20px verdana, sans-serif;
+}
+.squareTopLeft, .squareTopRight,
 .squareBottomLeft, .squareBottomRight
 {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	transition: all 0.1s ease-in;
+	width:25%;
+    height:50%;
+    background: #efefef;
+    border: 1px solid #84898c;
+    
+   
+	
+}
+.hit_box_top_left,.hit_box_top_right,
+.hit_box_bottom_left,.hit_box_bottom_right,img
+{
+	
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+	width:25%;
+    height:50%;
+
+	
 }
 
-.squareTopLeft
+.squareTopLeft,.hit_box_top_left,.picture_top_left
 {
- top:100px;
- left:300px;
- width:150px;
- height:100px;
- 
- background: blue;
+ top:0%;
+ left:18.75%;
 }
-.squareTopright
+.squareTopRight,.hit_box_top_right,.picture_top_right
 { 
-	width:150px;
-    height:100px;
-	top:100px;
-	left:450px;
-	background: red;
+	top:0px;
+	left:43.75%;
 }
 
 
-.squareBottomLeft
+.squareBottomLeft,.hit_box_bottom_left,.picture_bottom_left
 { 
-	width:150px;
-    height:100px;
-	top:200px;
-	left:350px;
-	background: green;
+	
+	top:50.5%;
+	left:31.25%;
+	
 }
-.squareBottomRight
+.squareBottomRight,.hit_box_bottom_right,.picture_bottom_right
 {
-	width:150px;
-    height:100px;
-	background: yellow;
-	top:200px;
-	left:500px;
+	
+	top:50.5%;
+	left:56.25%;
 }
 
-.squareTopLeft: 
+.squareTopLeft{border-radius: 15px 30px 30px 30px; }
+.squareTopRight { border-radius: 30px 15px 30px 30px;}
+.squareBottomLeft{border-radius: 30px 30px 30px 15px;}
+.squareBottomRight{border-radius: 30px 30px 15px 30px;}
+
+.picture_top_left,.picture_top_right,
+.picture_bottom_left,.picture_bottom_right
+{z-index: -1}
+
+.logo h1
 {
-	-moz-transform: translateX(-100px);
+	border bottom: 1px solid red;
 }
