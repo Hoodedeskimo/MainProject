@@ -1,0 +1,35 @@
+.mainContainer{
+	margin: 10px auto;
+	border: 1px solid black;
+	height:400px;
+	width:800px;
+	overflow: hidden;
+	background-color: white;
+}
+
+.mainContainer > img{
+	height:400px; 
+	width:800px;
+	display:none;
+	float:left;
+}
+.navImages{
+	position: absolute;
+	left: 50%;
+	width: 1000px;
+	height:100px;
+	margin :10 auto;
+	border: 1px solid black;
+	transform: translateX(-50%);
+}
+
+.navImages > img{
+	height:100px;
+	width: 200px;
+	float: left;
+	display:block;
+	box-shadow: 1px, 1px;
+	border: 2px solid red;
+}
+
+#one{}
